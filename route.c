@@ -6,18 +6,18 @@
 typedef struct _Point {
 	int x;
 	int y;
-}Point;
+}Point; //좌표값 구조체
 
 typedef struct _Check {
 	Point p;
 	char dir;
-}Check;
+}Check; // 지나온 길을 담기 위한 구조체
 
 int setCheck(Check pc[],Point p, char dir,int n) {
 	int i = 0;
 	for (i = 0; i < n; i++) {
 		if ((pc + i)->p.x == p.x && (pc + i)->p.y == p.y) {
-			if ((pc + i)->dir == dir) {
+			if ((pc + i)->dir == dir) { // 주어진 값이 이미 지나온 길이었으면
 				return 0;
 			}
 		}
