@@ -39,12 +39,3 @@ int solution(char* s) {
 	}
 	return answer;
 }
-
-int main() {
-	char*string = "";
-	int answer;
-	answer=solution(string);
-
-	printf("%d", answer);
-	return 0;
-}
